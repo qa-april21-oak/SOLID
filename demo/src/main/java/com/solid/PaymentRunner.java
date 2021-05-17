@@ -11,6 +11,9 @@ public class PaymentRunner {
         
         boolean cardResult = gateway.tryTransaction(card, 100);
         boolean favourResult = gateway.tryTransaction(matePoints, 100);
+        
+        System.out.println(cardResult);
+        System.out.println(favourResult);
 	}
 	
 }
